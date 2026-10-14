@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Network Packet Analyzer
 
 A Python packet analyzer that uses Scapy to capture and summarize up to 20 network packets.
@@ -60,3 +61,7 @@ git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/network-packet-analyzer.git
 git push -u origin main
 ```
+=======
+# network-packet-analyzer
+Python-based Network Packet Analyzer using Scapy for packet capturing and protocol analysis.
+>>>>>>> fe779e358837c288bee01fba3ab7b01bb92d7215
