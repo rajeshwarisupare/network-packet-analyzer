@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 # Network Packet Analyzer
 
-A Python packet analyzer that uses Scapy to capture and summarize up to 20 network packets.
+A Python network packet analyzer that uses Scapy to capture and summarize up to 20 packets.
 
 ## Features
 
@@ -14,8 +13,8 @@ A Python packet analyzer that uses Scapy to capture and summarize up to 20 netwo
 ## Requirements
 
 - Python 3.8 or newer
-- Scapy
-- On Windows, Npcap is generally required for live packet capture
+- Scapy (installed from `requirements.txt`)
+- Npcap on Windows for live packet capture
 
 ## Installation
 
@@ -33,13 +32,13 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\venv\Scripts\Activate.ps1
 ```
 
-Install the dependency:
+Install Scapy:
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
-Install Npcap on Windows if needed. Packet capture may also require elevated privileges.
+On Windows, install Npcap if needed. Packet capture may require elevated privileges and a valid capture interface.
 
 ## Usage
 
@@ -49,19 +48,12 @@ python packet_analyzer.py
 
 The analyzer stops after 20 packets, or earlier if you press Ctrl+C. Capture only traffic on your own device or on a network for which you have permission. Packet payload previews may contain sensitive data.
 
-## Uploading to GitHub
+## GitHub
 
-Create an empty repository on GitHub, then run these commands from this project directory (replace `YOUR_USERNAME` with your GitHub username):
+From this project directory, stage, commit, and push changes to the configured remote:
 
 ```powershell
-git init
 git add packet_analyzer.py README.md requirements.txt .gitignore
-git commit -m "Add network packet analyzer"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/network-packet-analyzer.git
-git push -u origin main
+git commit -m "Update network packet analyzer"
+git push
 ```
-=======
-# network-packet-analyzer
-Python-based Network Packet Analyzer using Scapy for packet capturing and protocol analysis.
->>>>>>> fe779e358837c288bee01fba3ab7b01bb92d7215
